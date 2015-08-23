@@ -11,12 +11,13 @@ import org.springframework.web.client.RestTemplate;
 
 public class ProgramaCliente {
 
-    final static String REST_URL = "http://localhost:8084/webservice/rest/programa";
+    final static String REST_URL = "http://localhost:8080/webservice/rest/programa";
 
     public static void main(String[] args) {
 
-        ProgramaCliente.save();
+        ProgramaCliente.find(1L);
         ProgramaCliente.list();
+        ProgramaCliente.save();
     }
 
     public static void list() {
